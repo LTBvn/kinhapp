@@ -1,0 +1,678 @@
+/* For information on how to create your own theme, please see:
+   http://ionicframework.com/docs/theming/ */
+
+   @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+   /* Set variables for all modes */
+   :root {
+	   /* Set the background of the entire app */
+	   --ion-background-color: #ffffff;  
+	   /* 3 màu chính dụng ở đây */
+	   --ion-color-primary: #703EFF;
+	   --ion-color-secondary: #703EFF;
+	   --ion-color-tertiary: #FDBB0F;
+	   /* mấy màu phụ cơ bản */
+	   --ion-color-success: #2dd55b;
+	   --ion-color-warning: #ffc409;
+	   --ion-color-danger: #c5000f;
+	   --ion-color-light: #f6f8fc;
+	   --ion-color-medium: #F3F2F6;
+	   --ion-color-dark: #2f2f2f;
+	   --ion-font-family: 'Lexend', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Roboto', sans-serif;
+   }
+
+/* Set text color of the entire app for iOS only */
+:root.ios {
+    --ion-text-color: #000;
+}
+
+/* Set text color of the entire app for Material Design only */
+:root.md {
+    --ion-text-color: #222;
+}
+
+/* Customize padding for ion-col components globally */
+ion-col {
+    padding: 0;
+}
+ion-grid{
+    padding: 0;
+}
+
+
+
+.trypro{
+	background:var(--ion-color-primary);
+	border-radius:30px;
+	padding:0 10px;
+	display:flex;
+	align-items:center;
+	height:35px;
+	color:white;
+	text-decoration:none;
+}
+.contentPage{
+	padding:0px 10px 0;
+}
+.w-full{
+	width: 100%;
+}
+.divIconChat{
+	height:30px;
+	width:30px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:100%;
+	background: #A7591E;
+}
+.btnChatGold p{
+	color:var(--ion-color-dark);
+	font-weight:bold;
+	font-size:10px;
+	margin-left:5px;
+}
+.activeTabbar{
+	border-top:1px solid var(--ion-color-secondary);
+}
+.activeTabbar  .TextIcon{
+	font-weight:bold;	
+	color:var(--ion-color-secondary);
+}
+.DivTabbar{
+	padding-top:10px;
+}
+.IconTabbar{
+	padding-top:10px;
+}
+.TextIcon{
+	font-weight:bold;
+	color: #B4B4B4;
+}
+.btnChatAI{
+	height:50px;
+}
+.btnAiYellow{
+	margin:10px  0;
+	background-color: var(--ion-color-tertiary);
+	padding:5px 5px;
+	border-radius:30px;
+}
+.btnAiYellow p{
+	font-size:11px;
+	font-weight:bold;
+}
+.Popup-verse{
+	background-color: var(--ion-color-secondary);
+	min-height:100px;
+	padding:20px;
+	margin:70px 0 0 0;
+	border-radius:20px;
+	color:white;
+	
+}
+.Popup-verse .divImageBook{
+	position:absolute;
+	right:0;
+}
+.verse-notifi{
+	width:100%;
+	text-align:right;
+	font-size:20px;
+	margin-top:10px;
+}
+.verse-notifi-chapters{
+	width:100%;
+	text-align:right;
+	margin-top:10px;
+	font-size:30px;
+}
+.text-translate-EN{
+	margin-top:10px;
+	font-size:13px;
+}
+.text-translate-EN-bla-bla{
+	margin-top:10px;
+	display: -webkit-box;         
+    -webkit-box-orient: vertical;
+    overflow: hidden;              
+    -webkit-line-clamp: 3;        
+    max-height: 4.5em;          
+    line-height: 1.5em;  
+	font-size:13px;
+}
+.popup-verse-btn{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:10px;
+	padding:1px 5px;
+	background-color:white ;
+	margin-right:10px;
+}
+.button-native::after {
+	background-color: red;
+}
+.Tafsir{
+	color:black;
+	margin:0;
+	margin-right:5px;
+	text-transform: capitalize;
+}
+.verse-under{
+	margin-top:10px;
+}
+.Popup-Salah-Recitations{
+	background-color: #F3F2F6;
+	border:1px solid #D8D8D8;
+	min-height:100px;
+	padding:20px;
+	margin:70px 0 0 0;
+	border-radius:20px;
+	color:black;
+}
+.Popup-Salah-Recitations .divImagehand{
+	position:absolute;
+	right:0;
+}
+.divImagehand img{
+	position:relative;
+	right:10px;
+	top:28px;
+}
+ion-radio::part(container) {
+	width: 18px;
+	height: 18px;
+	border-radius: 100%;
+	border: 2px solid #6815EC;
+  }
+  
+  ion-radio::part(mark) {
+	background: none;
+	transition: none;
+	transform: none;
+	border-radius: 0;
+  }
+  
+  ion-radio.radio-checked::part(container) {
+	background: #6815ec;
+	border-color: transparent;
+  }
+  
+  ion-radio.radio-checked::part(mark) {
+	width: 6px;
+	height: 10px;
+	border-width: 0px 2px 2px 0px;
+	border-style: solid;
+	border-color: #fff;
+  
+	transform: rotate(45deg);
+  }
+  ion-radio.radio-checked::part(mark){
+	margin-bottom:4px;
+  }
+ 
+.Salah-Recitation-btnRead{
+	width:100%;
+	background-color:white;
+	border-radius:5px;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	margin-top:10px;
+	color:black;
+	box-shadow:0 0 2px #D8D8D8;
+}
+.Salah-btnStart-Compass{
+	width:100%;
+	background-color:white;
+	border-radius:5px;
+	display:flex;
+	align-items:center;
+	justify-content: center;
+	margin-top:30px;
+	color:black;
+	box-shadow:0 0 2px #D8D8D8;
+}
+.re-schedule{
+	margin-left:5px;
+	font-weight:bold;
+}
+.popup-Qibla-Compass{
+	background-color: #F3F2F6;
+	border:1px solid #D8D8D8;
+	min-height:100px;
+	padding:20px;
+	margin:25px 0 20px;
+	border-radius:20px;
+	color:black;
+}
+.divImagecompass{
+	position:absolute;
+	right:0;
+	text-align:center;
+}
+.divImagecompass img{
+	position:relative;
+	top:30px;
+	width:80%;
+}
+.Compass-textsm{
+	font-size:13px;
+	font-weight:light;
+	color:#818181;
+}
+.block {
+	width: 100%;
+	height: 600px;
+	flex-direction:column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  ion-modal {
+	--height: auto;
+  }
+  .Blockcontent{
+	height: 100%;
+	width:90%;
+	margin:auto;
+  }
+  .Blockcontent-chapter{
+	height: 100%;
+	width:90%;
+	margin:auto;
+  }
+  .content-main div{
+	margin:10px 0;
+  }
+  .content-main > .content-main-quran{
+	text-align:right;
+	font-size:24px;
+  }
+  .content-main-quran h1{
+	font-size:2.625rem;
+  }
+  .toolbar-content{
+	display:flex;
+	justify-content:space-between;
+  }
+  .content-main-btnshare{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:100%;
+	height:45px;
+	width:45px;
+	background-color: #0000;
+	box-shadow: 0 0 2px #888888;
+  }
+.content-main-btnchat{
+	font-weight:bold;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:16px;
+	height:45px;
+	width:90px;
+	background-color: #703EFF;
+	box-shadow: 0 0 2px #703EFF;
+}
+.content-main-btnchat svg{
+	margin-right:10px;
+	
+}
+.content-main-btnread svg{
+	margin-left:10px;
+}
+.content-main-btnread{
+	font-weight:bold;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:16px;
+	height:45px;
+	width:80px;
+	background-color: #0000;
+	box-shadow: 0 0 2px #888888;
+	color: #000000;
+}
+.home-appname p{
+	font-weight:bold;
+	margin-left:10px;	
+}
+.text-bold{
+	font-weight:bold;
+}
+.input-time{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	padding:10px 5px;	
+	border:1px solid #E6E6E6; 
+	border-radius:10px;
+	background-color:white;
+}
+.radio-icon{
+	margin-top:10px;
+}
+.TimeParent{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	margin-top:40px;
+}
+.content-chat{
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	height:83vh;
+}
+.radio-wrapper{
+	justify-content:center;
+}
+.content-chat>div{
+	overflow-y: scroll;	
+}
+.inputText{
+	justify-content:space-between;
+}
+.inputText-handle{
+	border-radius:30px;
+	border:1px solid #A2A2A2;
+	width:80% !important;
+	background-color:#F3F2F6;
+}
+
+.footer-input-text{
+	box-shadow:none;
+
+}
+.input-wrapper.sc-ion-input-md input.sc-ion-input-md{
+	padding:0 10px;
+}
+.btns-send{
+	background-color:red;
+	height:40px;
+	width: 40px;
+	border-radius:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:#A2A2A2;
+}
+.btns-send svg{
+	margin-left:5px;
+}
+.user-message{
+	background-color:var(--ion-color-secondary);
+	min-width: 20%;
+	position:relative;
+	padding:2px 10px;
+	float:right;
+	display: inline-block; 
+	border-radius:10px;
+	color:white;
+	margin:10px 0;
+}
+.user-message:before {
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom:15px solid var(--ion-color-secondary); 
+    position: absolute; 
+	right:10px;
+	bottom: -13px;
+	transform:rotate(180deg);
+	color:;
+}
+.quran-verse{
+	background-color:#F3F2F6;
+	min-width:20%;
+	padding:2px 10px;
+	border-radius:10px;
+	color:white;
+	margin:10px 0;
+	color:black;
+	display: inline-block; 
+}
+.quran-verse p, small{
+	color:#424242;
+	font-weight:light;
+}
+.quran-verse-btn{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:100%;
+	height:30px;
+	width:30px;
+	background-color:white;
+	margin-right:10px;
+	box-shadow:0 0 2px #888888;
+}
+/* .min-fullscreen{
+	min-height: 100vh;
+} */
+ .footerInput{
+	padding:10px 0;
+ }
+ .has-focus:focus{
+	display:none;
+ }
+ .compass-container {
+    display: flex;
+	flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+	background-color:white;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+    }
+  
+  .compass {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 50%;
+  }
+  .divCompass{
+	background-color:var(--ion-color-primary);
+	height: 91vh;
+	padding:30px 30px 0;
+  }
+  .compass-header{
+	text-align: center;
+  }
+  .compass-header h1{
+	font-size:50px;
+	font-weight:bold;	
+  }
+  .needle{
+  }
+  .needle::before {
+    content: '';
+    position: absolute;
+	left:44.6%;
+    height: 20px;
+	top:-40px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: red;
+}
+.heading{
+	text-align:center;
+}
+.hidden{
+	display: none;
+}
+.Salah-btnStart-Compass{
+	text-decoration: none;
+}
+.h-r-chapters p {
+	padding:0;
+	margin:0;
+	margin-right:5px;	
+}
+.h-r-chapters{
+	background-color: #0000;
+	box-shadow: 0 0 1px #888888;
+	padding:5px 10px;
+	border-radius:30px;
+}
+.h-r-chapters-btn{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:100%;
+	height:30px;
+	width:30px;
+	background-color:white;
+	margin-right:10px;
+	box-shadow: 0 0 1px #888888;
+	color:black;
+}
+.h-r-chapters-btn-2{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:100%;
+	height:30px;
+	width:30px;
+	background-color:white;
+	box-shadow: 0 0 1px #888888;
+	color:black;
+}
+.h-r-chapters-number{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	border-radius:10px;
+	height:30px;
+	width:30px;
+	background-color:white;
+	margin-right:10px;
+	box-shadow: 0 0 1px #888888;
+	color:black;
+	padding:0 20px;
+}
+.contentchapter{
+	margin-top:10px;
+	box-shadow: 0 2px 5px #888888;
+	color:black;
+	padding:10px;
+	border-radius:10px;
+}
+.contentchapter-bookmark{
+	width:90% !important;
+	margin-top:10px;
+	color:black;
+	padding:10px;
+	border-radius:5px;
+	box-shadow: 0 1px 5px #888888;
+}
+.text-translate-EN-chapter1{
+	color:#818181;
+}
+.text-translate-EN-chapter2{
+	color:#424242;
+}
+.activeChapter{
+	background-color:#F3F2F6;
+}
+.showPopup {
+    overflow: hidden;
+}
+
+.showPopup > .contentShowPopup {
+    position: relative;
+    right: -100%; 
+    animation: slideIn 0.5s forwards; 
+}
+
+@keyframes slideIn {
+    0% {
+        right: 100%; 
+    }
+    100% {
+        right: 0; 
+    }
+}
+.headerReadParent{
+	position: fixed;
+	width: 100%;
+	z-index:10;
+}
+.headerRead{
+	position: absolute;
+	width: 100%;
+	background-color: white !important;
+	left: -10px;
+	padding:10px 10px;
+}
+.listContentChapter{
+	margin-top:51px;
+}
+.headerRead a{
+	text-decoration: none;
+	color:black !important;
+}
+.typewriter {
+	overflow: hidden; 
+	word-wrap: break-word; 
+ 	overflow-wrap: break-word;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+	from { width: 0; }
+	to { width: 100%; }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent; }
+	50% { border-color: orange; }
+  }
+  .text-center{
+	text-align: center;
+  }
+  .novalue{
+	opacity: 0.5;
+	color: gray ;
+  }
+  .divChapter{
+	padding:0 1px;
+  }
+  .divChapter>div{
+	text-align: center;
+	color:black;
+	border-radius:10px;
+	padding:5px 10px;
+  }
+.listChapters{
+	margin:10px 0px;
+}
+.book-selection{
+	padding:0 10px;
+}
+.quranTafsir{
+	font-size:2.625rem !important;
+}
+.btnNumberVerses>div{
+	text-align:center;
+}
+/* .numberTime{
+	width:41px;
+	text-align:center;
+} */
+.nothingBooksmark{
+	position:absolute;
+	top:50%;
+}
+.divtryUprate{
+	padding:0 10px;
+}

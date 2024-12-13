@@ -1,0 +1,49 @@
+.slider{
+    background-color: red !important;
+}/* Center the title in the IonToolbar */
+ion-toolbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ion-title {
+    text-align: center;
+}
+
+/* Style for the back button */
+.back-button {
+    --background: #success; /* Match the toolbar color */
+    --color: #fff; /* Ensure text color contrasts with background */
+    font-size: 0.8rem; /* Make the button text smaller */
+    --padding-start: 8px; /* Adjust padding to make button smaller */
+    --padding-end: 8px; /* Adjust padding to make button smaller */
+    --border-radius: 12px; /* Optional: Rounded corners */
+}
+
+/* Ensure content is centered */
+.register-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.register-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px; /* Add some padding for better spacing */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+    border-radius: 8px; /* Optional: Rounded corners */
+    background: #fff; /* Optional: Background color for contrast */
+}
+
+.register-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.toggle-icon {
+    cursor: pointer;
+}

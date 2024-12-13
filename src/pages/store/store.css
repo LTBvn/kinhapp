@@ -1,0 +1,117 @@
+.store-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.product-card {
+  width: 100%;
+  max-width: 400px; /* Set a maximum width for the card */
+  margin: auto; /* Center card horizontally */
+  text-align: center; /* Center text within the card */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  position: relative; /* Position relative for absolute elements */
+  border-radius: 10px; /* Rounded corners for the card */
+  overflow: hidden; /* Ensures rounded corners apply to child elements */
+}
+
+.close-icon {
+  position: absolute; /* Position the icon absolutely within the card */
+  top: 10px; /* Distance from the top */
+  right: 10px; /* Distance from the right */
+  font-size: 24px; /* Icon size */
+  cursor: pointer; /* Change cursor on hover */
+  color: #fff; /* Icon color */
+}
+
+.product-image {
+  width: 100%; /* Full width of the card */
+  border-radius: 10px 10px 0 0; /* Rounded top corners */
+}
+
+.product-title {
+  font-size: 1.5rem; /* Title size */
+  font-weight: bold; /* Bold title */
+  margin-top: 16px; /* Margin above the title */
+}
+
+.product-features ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0; /* Remove padding */
+  font-size: 1rem; /* Font size for list */
+  margin: 16px 0; /* Margin around the list */
+}
+
+.product-features ul li {
+  margin: 8px 0; /* Space between list items */
+  display: flex; /* Flex display for icons and text */
+  align-items: center; /* Center items vertically */
+}
+
+.product-features ul li .feature-icon {
+  margin-right: 12px; /* Space between icon and text */
+  font-size: 20px; /* Size of the icons */
+  color: #000; /* Color of the icons */
+}
+
+.pricing-options {
+  margin: 20px 0; /* Space above and below pricing options */
+}
+
+.price-option {
+  margin-bottom: 10px; /* Space below each pricing option */
+}
+
+/* Custom Button Styling */
+.custom-button {
+  width: 100%; /* Full width of the button */
+  padding: 12px 0; /* Padding for button */
+  border-radius: 8px; /* Rounded corners for buttons */
+  border: 2px solid gray; /* Default gray border */
+  background-color: #fff; /* Default white background */
+  color: black; /* Default black text */
+  font-size: 1rem; /* Font size for button text */
+  font-weight: bold; /* Bold text */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Smooth transition effects */
+}
+
+/* Selected button styling */
+.price-option.selected .custom-button {
+  border-color: blue; /* Blue border when selected */
+  background-color: blue; /* Blue background when selected */
+  color: white; /* White text on blue background */
+}
+
+/* Hover effect for unselected buttons */
+.custom-button:hover {
+  border-color: #007bff; /* Change border color on hover */
+}
+
+/* Additional styling for cancel option */
+.cancel-option {
+  margin-top: 12px; /* Space above the cancel option */
+  font-size: 0.9rem; /* Font size for cancel text */
+  color: gray; /* Gray color for cancel text */
+}
+
+/* Close icon container styling */
+.close-icon-container {
+  position: absolute; /* Position it relative to the card */
+  top: 10px; /* Distance from the top */
+  right: 10px; /* Distance from the right */
+  width: 40px; /* Width of the circular button */
+  height: 40px; /* Height of the circular button */
+  display: flex; /* Flex container */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  border-radius: 50%; /* Make it circular */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.close-icon {
+  color: white; /* White icon color */
+  font-size: 24px; /* Icon size */
+}

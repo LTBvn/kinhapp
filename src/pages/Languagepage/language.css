@@ -1,0 +1,83 @@
+/* Style for the header container */
+.header-container {
+  display: flex; /* Flex layout for alignment */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between; /* Space between search bar and close button */
+  padding: 10px; /* Padding for the container */
+  background-color: #f9f9f9; /* Light background to contrast content */
+  border-bottom: 1px solid #ddd; /* Light bottom border for separation */
+}
+
+/* Style for the search bar */
+.search-bar {
+  flex: 1; /* Allow the search bar to grow and fill available space */
+  border-radius: 25px; /* Rounded corners */
+  --background: #f0f0f0; /* Light gray background */
+  --color: #333; /* Dark text color */
+  --placeholder-color: #aaa; /* Placeholder text color */
+  --box-shadow: none; /* Remove shadow for a flat look */
+  margin-right: 10px; /* Space between search bar and close button */
+}
+
+/* Style for the custom Close button */
+.custom-close-button {
+  background-color: black; /* Black background */
+  border: none; /* No border */
+  color: white; /* White text color */
+  border-radius: 50%; /* Make the button round */
+  width: 40px; /* Fixed width */
+  height: 40px; /* Fixed height */
+  display: flex; /* Flex layout for centering */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  font-size: 24px; /* Size of the close icon */
+  cursor: pointer; /* Change cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.custom-close-button:hover {
+  background-color: #444; /* Darker background on hover */
+  opacity: 0.9; /* Slight opacity change on hover */
+}
+
+/* Style for the ion-item */
+ion-item {
+  --background: #fff; /* White background for items */
+  --border-radius: 8px; /* Rounded corners */
+  margin: 8px 0; /* Adds vertical space between items */
+  padding: 10px; /* Padding inside items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add slight shadow for depth */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+ion-item:hover {
+  background-color: #f4f4f4; /* Light background on hover */
+}
+
+/* Style for the labels */
+ion-label {
+  font-size: 1.2em; /* Increase font size for better readability */
+  color: #333; /* Darker color for text */
+}
+
+/* Style for the ion-radio */
+ion-radio {
+  --color-checked: #3880ff; /* Change checked color to Ionic blue */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .search-bar {
+    margin-right: 8px; /* Reduce margin for smaller screens */
+  }
+
+  ion-label {
+    font-size: 1em; /* Smaller font size for labels on mobile */
+  }
+
+  .custom-close-button {
+    width: 35px; /* Reduce size of close button on smaller screens */
+    height: 35px;
+    font-size: 20px; /* Reduce icon size on smaller screens */
+  }
+}

@@ -1,0 +1,17 @@
+.verse-content {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    direction: rtl; /* Để hỗ trợ ngôn ngữ viết từ phải sang trái */
+  }
+  
+  .transcription, .translation {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+  }
+  
+  ion-card {
+    --border-radius: 12px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
